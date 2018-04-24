@@ -1,37 +1,40 @@
 const superb = require('superb')
-const camelcase = require('camelcase')
+const camelCase = require('camelcase')
 
 module.exports = {
   templateOptions: {
-    context: {
-      camelcase
-    }
+    context: { camelCase },
   },
   prompts: {
     name: {
       message: 'What is the name of the new bot?',
-      role: 'folder:name'
+      role: 'folder:name',
     },
     description: {
       message: 'How would you describe the new bot?',
-      default: `my ${superb()} bot`
+      default: `My ${superb()} bot.`,
+    },
+    fullname: {
+      message: 'What is your full name?',
+      role: 'git:name',
+      store: true,
     },
     username: {
       message: 'What is your GitHub username?',
-      role: 'git:name',
-      store: true
+      role: 'git:username',
+      store: true,
     },
     email: {
       message: 'What is your GitHub email?',
       role: 'git:email',
-      store: true
-    }
+      store: true,
+    },
   },
   move: {
-    'gitignore': '.gitignore'
+    'gitignore': '.gitignore',
   },
   enforceNewFolder: true,
   installDependencies: true,
   gitInit: true,
-  showTip: true
+  showTip: true,
 }
