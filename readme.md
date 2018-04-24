@@ -1,27 +1,30 @@
 # template-bot
 
-🚀 Kick-start a Telegram bot with `micro-bot`
-
-Based on [template-micro-service](https://github.com/tiaanduplessis/template-micro-service).
+🚀 Kick-start a Telegram bot with `telegraf.js` and `sao`.
 
 ## Features
 
-- Build with [micro-bot](https://github.com/telegraf/micro-bot)
-- Lint with [standard](https://github.com/feross/standard)
-- README with instant [now](https://zeit.co/now) deployment buttons
+- Build with [telegraf.js](https://github.com/telegraf/telegraf).
+- Lint with [@atomix/eslint-config](https://github.com/atomixinteractions/eslint-config).
+- Uses [knex](https://github.com/tgriesser/knex) as a DB query builder.
 
 ## Usage
 
-Install [SAO](https://github.com/egoist/sao) first.
-
-### From git
+Install [SAO](https://github.com/egoist/sao) first:
 
 ```sh
-$ sao telegraf/template-bot
+$ npm i sao -g
 ```
 
-### From npm
+Or for crazy junkies:
 
 ```sh
-$ sao bot
+$ sudo npm i sao -g
+```
+
+Then create a new bot:
+
+```sh
+$ sao piterden/template-bot my-new-bot
+$ cd my-new-bot
 ```
