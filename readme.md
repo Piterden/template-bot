@@ -28,3 +28,10 @@ Then create a new bot:
 $ sao piterden/template-bot my-new-bot
 $ cd my-new-bot
 ```
+
+Or for npm@5:
+
+```sh
+$ npx sao piterden/template-bot my-new-bot
+$ cd my-new-bot
+```
