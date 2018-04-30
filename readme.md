@@ -57,3 +57,33 @@ DEBUG_COLORS=true
 DEBUG_SHOW_HIDDEN=true
 DEBUG_DEPTH=10
 ```
+
+The bot's default structure:
+
+```sh
+ ├── migrations/
+ ├── src/
+ │  ├── handlers/
+ │  │  ├── help/
+ │  │  │  └── index.js
+ │  │  ├── settings/
+ │  │  │  └── index.js
+ │  │  ├── start/
+ │  │  │  └── index.js
+ │  │  └── index.js
+ │  ├── helpers/
+ │  │  ├── debug/
+ │  │  │  └── index.js
+ │  │  └── index.js
+ │  ├── keyboards/
+ │  │  └── index.js
+ │  ├── scenes/
+ │  │  └── index.js
+ │  └── index.js
+ ├── .gitignore
+ ├── knexfile.js
+ ├── LICENSE
+ ├── README.md
+ └── package.json
+```
+
