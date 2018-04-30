@@ -35,3 +35,25 @@ Or for `npm@5` you \wo `sao` install:
 $ npx sao piterden/template-bot my-new-bot --update --force-npm
 $ cd my-new-bot
 ```
+
+The `.env` file:
+
+```dotenv
+NODE_ENV=development
+
+BOT_TOKEN=
+BOT_NAME=
+
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_CLIENT=mysql
+DB_DATABASE=
+DB_USERNAME=
+DB_PASSWORD=
+DB_CHARSET=utf8mb4
+DB_MIGRATIONS_TABLE=migrations
+
+DEBUG_COLORS=true
+DEBUG_SHOW_HIDDEN=true
+DEBUG_DEPTH=10
+```
