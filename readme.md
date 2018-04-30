@@ -25,13 +25,13 @@ $ sudo npm i sao -g
 Then create a new bot:
 
 ```sh
-$ sao piterden/template-bot my-new-bot
+$ sao piterden/template-bot my-new-bot --update --force-npm
 $ cd my-new-bot
 ```
 
-Or for npm@5:
+Or for `npm@5` you \wo `sao` install:
 
 ```sh
-$ npx sao piterden/template-bot my-new-bot
+$ npx sao piterden/template-bot my-new-bot --update --force-npm
 $ cd my-new-bot
 ```
