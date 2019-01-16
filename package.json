@@ -1,6 +1,6 @@
 {
   "name": "template-bot",
-  "version": "1.1.0",
+  "version": "1.0.5",
   "description": "Scaffolding out a Telegram bot",
   "author": "Vitaly Domnikov <oss@gvitaly.codes>",
   "license": "MIT",
@@ -10,7 +10,7 @@
     "type": "git"
   },
   "scripts": {
-    "test": "eslint ."
+    "lint": "eslint ."
   },
   "engines": {
     "node": ">=8.5.0"
