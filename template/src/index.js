@@ -18,7 +18,7 @@ const {
   DB_DATABASE,
   DB_USER,
   DB_PASSWORD,
-  DB_CHARSET
+  DB_CHARSET,
 } = process.env
 
 const bot = new Telegraf(BOT_TOKEN, { username: BOT_NAME })
@@ -31,7 +31,7 @@ bot.context.db = knex({
     user: DB_USER,
     password: DB_PASSWORD,
     database: DB_DATABASE,
-    charset: DB_CHARSET
+    charset: DB_CHARSET,
   }
 })
 bot.use(session())
@@ -46,7 +46,7 @@ bot.startPolling()
 bot.launch({
   webhook: {
     domain: `https://${BOT_WEBHOOK_DOMAIN}`,
-    port: BOT_WEBHOOK_PORT
+    port: BOT_WEBHOOK_PORT,
   }
 })
 <%_ } _%>

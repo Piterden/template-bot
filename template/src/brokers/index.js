@@ -3,5 +3,5 @@ const time = require('./time')
 
 module.exports = {
   hello,
-  time
+  time,
 }

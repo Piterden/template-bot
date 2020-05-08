@@ -9,7 +9,7 @@ const {
   DB_PASSWORD,
   DB_CHARSET,
   DB_MIGRATIONS_TABLE,
-  NODE_ENV
+  NODE_ENV,
 } = process.env
 
 const config = {
@@ -21,15 +21,15 @@ const config = {
       database: DB_DATABASE,
       user: DB_USER,
       password: DB_PASSWORD,
-      charset: DB_CHARSET
+      charset: DB_CHARSET,
     },
     pool: {
       min: 2,
-      max: 10
+      max: 10,
     },
     migrations: {
-      tableName: DB_MIGRATIONS_TABLE
-    }
+      tableName: DB_MIGRATIONS_TABLE,
+    },
   },
 
   staging: {
@@ -40,15 +40,15 @@ const config = {
       database: DB_DATABASE,
       user: DB_USER,
       password: DB_PASSWORD,
-      charset: DB_CHARSET
+      charset: DB_CHARSET,
     },
     pool: {
       min: 2,
-      max: 10
+      max: 10,
     },
     migrations: {
-      tableName: DB_MIGRATIONS_TABLE
-    }
+      tableName: DB_MIGRATIONS_TABLE,
+    },
   },
 
   production: {
@@ -59,16 +59,16 @@ const config = {
       database: DB_DATABASE,
       user: DB_USER,
       password: DB_PASSWORD,
-      charset: DB_CHARSET
+      charset: DB_CHARSET,
     },
     pool: {
       min: 2,
-      max: 10
+      max: 10,
     },
     migrations: {
-      tableName: DB_MIGRATIONS_TABLE
-    }
-  }
+      tableName: DB_MIGRATIONS_TABLE,
+    },
+  },
 }
 
 module.exports = config[NODE_ENV || 'development']

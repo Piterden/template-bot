@@ -7,5 +7,5 @@ module.exports = {
   helpHandler,
   startHandler,
   settingsHandler,
-  messageHandler
+  messageHandler,
 }

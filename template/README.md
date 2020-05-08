@@ -28,7 +28,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Authors
 
-- **<%= fullname %>** - *Code* - [<%= username %>](https://github.com/<%= username %>)
+- **<%= fullname %>** - _Code_ - [<%= username %>](https://github.com/<%= username %>)
 
 ## License
 

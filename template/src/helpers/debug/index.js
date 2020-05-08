@@ -7,6 +7,6 @@ module.exports = (data) =>
     inspect(data, {
       colors: DEBUG_COLORS,
       showHidden: DEBUG_SHOW_HIDDEN,
-      depth: DEBUG_DEPTH
+      depth: DEBUG_DEPTH,
     })
   )

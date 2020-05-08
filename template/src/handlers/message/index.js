@@ -11,5 +11,5 @@ function getMessage(ctx) {
 module.exports = () => [
   async (ctx) => {
     await getMessage(ctx)
-  }
+  },
 ]
