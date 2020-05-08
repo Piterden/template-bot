@@ -12,7 +12,7 @@ module.exports = {
       {
         name: 'description',
         message: 'How would you describe the project?',
-        default: `My awesome bot.`,
+        default: 'My awesome bot.',
       },
       {
         name: 'fullname',
@@ -47,7 +47,7 @@ module.exports = {
       },
       {
         name: 'updatetype',
-        message: 'Chose update type to use',
+        message: 'Choose update type to use',
         type: 'list',
         choices: [
           { name: 'Polling', value: 'polling' },
