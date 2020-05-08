@@ -1,6 +1,5 @@
 require('dotenv').load()
 
-
 const {
   DB_CLIENT,
   DB_HOST,
